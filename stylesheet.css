@@ -51,6 +51,7 @@ padding: 50px;
 /* background-color: rgb(202, 202, 202); */
 margin: 10px;
 
+
 background-image: linear-gradient(
     rgba(189, 178, 195, 0.3) 0%,
     rgba(172, 164, 221, 0.6) 100%
@@ -60,10 +61,10 @@ background-image: linear-gradient(
 
   }
 
-   img {
+   /* img {
     max-width: 50%;
     max-height: 25%; 
-   }
+   }  */
 figure {
 
     display: flex;
