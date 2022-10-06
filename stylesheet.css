@@ -26,13 +26,52 @@ flex-direction: column;
 justify-content: flex-start;
   }
 
+
+  .firstproject {
+
+    width: 420px;
+  }
+
   .work {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    
+    justify-content: center;
+    padding: 10px;
     flex: 0 0 33.333%;
     border: 15px;
     border-style: groove;
+    
   }
+
+.intro {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+flex-wrap: wrap;
+}
+
+
+  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    /* .card-column {
+      flex: 0 0 50%;
+      max-width: 50%; */
+    /* } */
+    .work {
+    justify-content: flex-start;
+
+    }
+}
+
+      /* media query for larger screens */
+@media screen and (min-width: 992px) {
+    /* header {
+      width: 75%; */
+/* } */
+
+.work{
+justify-content: flex-start;
+}
+}
