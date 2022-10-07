@@ -7,22 +7,24 @@ html {
     /* Use Sans Serif font stack to help select the best font for each type of computer operating system  */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      /* Set font size in body to be slightly larger, increase line height, and set background color */
     font-size: 1.75rem;
     line-height: 1.5;
     background-color: cornsilk
-    
   }
 
   h4 {
-
+/* Set the font style of any h4 tags to make it prettier */
     font-style: oblique;
-    display: flex;
-    justify-content: center;
-    position: relative;
+
    
   }
 
   .header {
+    /* Set elements in the header to be positioned equally distant, no matter what the screen size is
+    Change the font to a serif font
+    add some color and other style elements to visually separate the header from the body
+    */
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -31,77 +33,58 @@ background-color: rgba(172, 164, 221, 0.6);
 margin: 5px;
 padding: 5px;
 color: rgb(42, 0, 72);
-
   }
   
 
   .project {
+    /* Use flexbox to center content 
+    Add a border, some color, and a margin
+    add a slight color gradient as background color
+    */
 display: flex;
-/* flex-wrap: wrap; */
 border: 10px;
 border-color: rgb(42, 0, 72);
 border-style: double;
-flex-grow: 0;
-/* flex-direction: column; */
 justify-content: center;
-padding: 0px;
-/* background-color: rgb(202, 202, 202); */
 margin: 10px;
-
-
-
-
-
 background-image: linear-gradient(
     rgba(189, 178, 195, 0.3) 0%,
-    rgba(172, 164, 221, 0.6) 100%
-    
-)
-
-
-  }
+    rgba(172, 164, 221, 0.6) 100%)
+}
 
 
 figure {
-
+/* Set flex direction as column, center alonng axis */
     display: flex;
-    justify-content: center;
     flex-direction: column;
    align-items: center;
  }
 
-  .firstproject {
-    display: block;
-    justify-content: center;
-    /* flex-grow: 2 0; */
-    position: relative;
-    flex-wrap: nowrap;
-    max-width: 100%;
-  }
+   .firstproject {
+    /* remove flex wrap   */
+     flex-wrap: nowrap; 
+   } 
 
   .work {
-
-    
-    
-    justify-content: center;
+/* set a border with some padding */
     padding: 10px;
-    flex: 1 1 ;
     border: 15px;
     border-style: groove;
     
   }
   .otherprojects {
+    /* set flex wrap to allow for different screen sizes */
     display: flex;
     flex-wrap: wrap;
-    flex: 0 0 50%;
+    
     
   }
 
 .intro {
+    /* Add some flex properties, borders, and padding */
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
-/* flex-wrap: wrap; */
 border-left: 10px;
 border-style: solid;
 border-color: rgb(42, 0, 72);
@@ -109,31 +92,26 @@ padding-right: 10px;
 
 }
 .profpic {
+    /* Set location and add margin */
     display:grid;
-    
-    /* justify-content:flex-start ; */
-    
     top: 100px;
     margin: 10px;
 }
 
 ul {
+    /* remove bullet points for a sleeker look */
     list-style-type: none;
 }
-div.img:hover {
-    cursor: pointer ;
-    border: white;
-
+a:hover {
+    /* add white glow and change cursor when link is hovered over */
+    cursor:pointer  ;
+    box-shadow:  10px 10px 10px 10px  white;
 }
 
 
   /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    /* .card-column {
-      flex: 0 0 50%;
-      max-width: 50%; */
-    /* } */
+    /* on tablets, set flex position, add header margin, and add padding  */
     .work {
     justify-content: flex-start;
 
@@ -149,6 +127,7 @@ div.img:hover {
 
       /* media query for larger screens */
 @media screen and (min-width: 992px) {
+     /* on larger screens, set flex position, increase header margin, and increase padding  */
     .header {
       margin: 50px; 
       
