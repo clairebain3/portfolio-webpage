@@ -10,4 +10,6 @@ Credits N/A
 
 License Please refer to the license in the repo
 
-![Picture of webpage] (assets/deployed_portfolio.png)
+![Picture of webpage] (/assets/deployed_portfolio.png)
+
+portfolio-webpage/assets/deployed_portfolio.png
